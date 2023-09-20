@@ -2,7 +2,9 @@ name: Sandbox - Build and Deploy
 
 on:
   push:
-    branches: master 
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ] 
 #normally you wouldn't be deploying master branch pushes to Sandbox,
 #but we're keeping things simple! 😁
 
